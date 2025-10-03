@@ -1,0 +1,15 @@
+# VS Code settings
+.vscode/
+
+# Build files
+*.exe
+*.out
+*.obj
+
+# OS junk
+Thumbs.db
+.DS_Store
+
+# Backup files
+*.log
+*.tmp
