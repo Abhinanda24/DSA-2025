@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;
+bool is_sorted(int arr[],int n){
+    for(int i=1;i<n;i++){
+        if(arr[i]<arr[i-1]){
+            return false;
+        }
+    }
+    return true;
+}
+int main(){
+    int n;
+    cout<<"Enter the size of the array"<<endl;
+    cin>>n;
+    int arr[n];
+    cout<<"Enter the elements to array"<<endl;
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    if(is_sorted(arr,n)== true){
+        cout<<"Given array is sorted"<<endl;
+
+    }
+    else {
+        cout<<"Not sorted"<<endl;
+    }
+    return 0;
+}
